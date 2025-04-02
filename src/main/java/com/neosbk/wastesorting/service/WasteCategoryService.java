@@ -17,6 +17,7 @@ public class WasteCategoryService {
 
     @Autowired
     private final WasteCategoryRepository wasteCategoryRepository;
+
     private final WasteCategoryMapper wasteCategoryMapper;
 
     public WasteCategoryService(WasteCategoryRepository wasteCategoryRepository, WasteCategoryMapper wasteCategoryMapper) {
