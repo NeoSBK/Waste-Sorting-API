@@ -133,8 +133,7 @@ public class RecycleTipTest {
 
         verify(mapper).toEntity(request);
         verify(repository).save(argThat(e ->
-                e.getItemName().equals("Plastic Bottle") &&
-                        e.getRecyclingTip().equals("Remove the cap before recycling.")
+                e.getItemName().equals("Plastic Bottle") && e.getRecyclingTip().equals("Remove the cap before recycling.")
         ));
         verify(mapper).toDTO(Tip);
         verifyNoMoreInteractions(repository, mapper);
